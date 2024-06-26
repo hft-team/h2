@@ -43,7 +43,8 @@ atomic-waker = "1.0.0"
 futures-core = { version = "0.3", default-features = false }
 futures-sink = { version = "0.3", default-features = false }
 tokio-util = { version = "0.7.1", features = ["codec", "io"] }
-tokio = { version = "1", features = ["io-util"] }
+tokio = { git = "https://github.com/hft-team/tokio.git", branch = "tokio-1.37.0", features = ["io-util"] }
+#tokio = { version = "1", features = ["io-util"] }
 bytes = "1"
 http = "1"
 tracing = { version = "0.1.35", default-features = false, features = ["std"] }
@@ -64,7 +65,8 @@ serde = "1.0.0"
 serde_json = "1.0.0"
 
 # Examples
-tokio = { version = "1", features = ["rt-multi-thread", "macros", "sync", "net"] }
+tokio = { git = "https://github.com/hft-team/tokio.git", branch = "tokio-1.37.0", features = ["rt-multi-thread", "macros", "sync", "net"] }
+# tokio = { version = "1", features = ["rt-multi-thread", "macros", "sync", "net"] }
 env_logger = { version = "0.10", default-features = false }
 tokio-rustls = "0.26"
 webpki-roots = "0.26"
