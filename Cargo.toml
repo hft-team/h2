@@ -43,9 +43,9 @@ atomic-waker = "1.0.0"
 futures-core = { version = "0.3", default-features = false }
 futures-sink = { version = "0.3", default-features = false }
 #tokio-util = { version = "0.7.1", features = ["codec", "io"] }
-tokio-util = { git = "https://github.com/hft-team/tokio.git", branch = "tokio-1.37.0", features = ["codec", "io"] }
+tokio-util = { git = "https://github.com/hft-team/tokio-dpdk.git", branch = "tokio-1.37.0", features = ["codec", "io"] }
 
-tokio = { git = "https://github.com/hft-team/tokio.git", branch = "tokio-1.37.0", features = ["io-util"] }
+tokio = { git = "https://github.com/hft-team/tokio-dpdk.git", branch = "tokio-1.37.0", features = ["io-util"] }
 #tokio = { version = "1", features = ["io-util"] }
 bytes = "1"
 http = "1"
@@ -67,11 +67,11 @@ serde = "1.0.0"
 serde_json = "1.0.0"
 
 # Examples
-tokio = { git = "https://github.com/hft-team/tokio.git", branch = "tokio-1.37.0", features = ["rt-multi-thread", "macros", "sync", "net"] }
+tokio = { git = "https://github.com/hft-team/tokio-dpdk.git", branch = "tokio-1.37.0", features = ["rt-multi-thread", "macros", "sync", "net"] }
 # tokio = { version = "1", features = ["rt-multi-thread", "macros", "sync", "net"] }
 env_logger = { version = "0.11.3", default-features = false }
 #tokio-rustls = "0.26"
-tokio-rustls = { git = "https://github.com/hft-team/tokio-rustls.git", branch = "0.26.0" }
+tokio-rustls = { git = "https://github.com/hft-team/tokio-rustls-dpdk.git", branch = "0.26.0" }
 
 webpki-roots = "0.26"
 
